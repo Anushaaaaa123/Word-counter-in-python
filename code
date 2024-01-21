@@ -1,0 +1,13 @@
+#for differentiating punctuation marks or special characters in the input
+import re
+
+#user enters the iput
+word=input("Enter a word or sentence or paragraph:")
+
+  #checking for empty input
+if not word:
+    print("please enter something.")
+else:
+   #counting the words
+   count=len(re.findall(r'\w+',word))
+   print(str(count))#prints the value
